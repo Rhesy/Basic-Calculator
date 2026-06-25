@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f7d6e0, #d9b3e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator Container */
+.calculator {
+    background: #b784a7;
+    padding: 25px;
+    border-radius: 25px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Display Screen */
+#display {
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 28px;
+    text-align: right;
+    background: #ffffff;
+    color: #5a3d5c;
+    font-weight: bold;
+}
+
+/* Buttons Layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* General Button Style */
+button {
+    height: 65px;
+    border: none;
+    border-radius: 15px;
+    background: #d6a5c9;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+button:hover {
+    background: #c58bb7;
+    transform: translateY(-3px);
+}
+
+/* Click Effect */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Clear Button (C) */
+button:first-child {
+    background: #e57373;
+}
+
+button:first-child:hover {
+    background: #d65c5c;
+}
+
+/* Operator Buttons */
+button:nth-child(2),
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16) {
+    background: #9c6b8f;
+}
+
+button:nth-child(2):hover,
+button:nth-child(3):hover,
+button:nth-child(4):hover,
+button:nth-child(8):hover,
+button:nth-child(12):hover,
+button:nth-child(16):hover {
+    background: #f0c3e5;
+}
+
+/* Number Buttons */
+button:nth-child(5),
+button:nth-child(6),
+button:nth-child(7),
+button:nth-child(9),
+button:nth-child(10),
+button:nth-child(11),
+button:nth-child(13),
+button:nth-child(14),
+button:nth-child(15),
+button:nth-child(17),
+button:nth-child(18) {
+    background: #d6a5c9;
+}
+
+/* Equal Button */
+button:nth-child(16) {
+    background: #7b4f74;
+}
+
+button:nth-child(16):hover {
+    background: #693f62;
+}
